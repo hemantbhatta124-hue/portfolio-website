@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hemant Bhatta Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#020617;
+    color:white;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+header{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#000814;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#0ea5ff;
+}
+
+.logo span{
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#0ea5ff;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    padding:80px 8%;
+    background:linear-gradient(to right,#020617,#001233);
+}
+
+.hero img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    border:4px solid #0ea5ff;
+    object-fit:cover;
+}
+
+.hero-text h3{
+    color:#0ea5ff;
+    font-size:30px;
+}
+
+.hero-text h1{
+    font-size:70px;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    color:#0ea5ff;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    max-width:500px;
+    line-height:1.8;
+    margin-bottom:25px;
+    color:#ddd;
+}
+
+.social{
+    margin-bottom:25px;
+}
+
+.social a{
+    color:white;
+    font-size:24px;
+    margin-right:15px;
+    transition:0.3s;
+}
+
+.social a:hover{
+    color:#0ea5ff;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    border:2px solid #0ea5ff;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5ff;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#0ea5ff;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.9;
+    color:#ddd;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:25px;
+}
+
+.skill-box{
+    background:#071426;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #0ea5ff33;
+    transition:0.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-10px);
+}
+
+.skill-box i{
+    font-size:50px;
+    color:#0ea5ff;
+    margin-bottom:15px;
+}
+
+.project{
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    align-items:center;
+}
+
+.project img{
+    width:500px;
+    border-radius:20px;
+}
+
+.project-text{
+    flex:1;
+}
+
+.project-text h2{
+    margin-bottom:20px;
+}
+
+.project-text p{
+    line-height:1.8;
+    margin-bottom:20px;
+    color:#ddd;
+}
+
+.education-box,
+.cert-box,
+.lang-box{
+    background:#071426;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    border:1px solid #0ea5ff33;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:30px;
+}
+
+.contact-item{
+    background:#071426;
+    padding:20px 25px;
+    border-radius:12px;
+    border:1px solid #0ea5ff33;
+}
+
+.contact-item i{
+    color:#0ea5ff;
+    margin-right:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000814;
+    color:#aaa;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:45px;
+}
+
+.project{
+    flex-direction:column;
+}
+
+.project img{
+    width:100%;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Hemant <span>Bhatta</span></div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#project">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<img src="C:\Users\Dell\Desktop\Heamu portfolio\WhatsApp Image 2026-05-02 at 14.22.08 (1).jpeg" alt="Hemant">
+
+<div class="hero-text">
+<h3>Hello, I'm</h3>
+<h1>Hemant Bhatta</h1>
+<h2>BIM Student & Web Developer</h2>
+
+<div class="social">
+<a href="https://www.facebook.com/heamu012" target="_blank"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+
+<p>
+Enthusiastic and detail-oriented Web Developer &
+Graphic Designer passionate about building responsive
+and user-friendly web applications.
+</p>
+
+<a href=""C:\Users\Dell\Desktop\Heamu portfolio\Hemant_Bhatta_Resume (2).pdf"" class="btn">Download CV</a>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<h1 class="title">About Me</h1>
+
+<p>
+Enthusiastic and detail-oriented Web Developer with hands-on experience in front-end and back-end technologies. Skilled in building responsive, user-friendly web applications using modern tools and frameworks. Strong problem-solving abilities, a collaborative mindset, and a passion for continuous learning.
+</p>
+</section>
+
+<section id="skills">
+<h1 class="title">Technical Skills</h1>
+
+<div class="skills">
+
+<div class="skill-box">
+<i class="fab fa-html5"></i>
+<h3>HTML</h3>
+</div>
+
+<div class="skill-box">
+<i class="fab fa-css3-alt"></i>
+<h3>CSS</h3>
+</div>
+
+<div class="skill-box">
+<i class="fab fa-js"></i>
+<h3>JavaScript</h3>
+</div>
+
+<div class="skill-box">
+<i class="fab fa-php"></i>
+<h3>PHP</h3>
+</div>
+
+<div class="skill-box">
+<i class="fab fa-python"></i>
+<h3>Python</h3>
+</div>
+
+<div class="skill-box">
+<i class="fas fa-palette"></i>
+<h3>Graphic Design</h3>
+</div>
+
+</div>
+</section>
+
+<section id="project">
+<h1 class="title">Project Experience</h1>
+
+<div class="project">
+
+<img src="C:\Users\Dell\Desktop\Heamu portfolio\WhatsApp Image 2026-05-07 at 14.31.32.jpeg" alt="Project">
+
+<div class="project-text">
+<h2>Two-Wheeler Rental Management System</h2>
+
+<p>
+Developed a responsive bike renting website using HTML,
+CSS, JavaScript, and PHP.
+</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+</div>
+</section>
+
+<section id="education">
+<h1 class="title">Education</h1>
+
+<div class="education-box">
+<h2>Bachelor in Information Management (BIM)</h2>
+<p>SPA College</p>
+<p>Tribhuvan University - Expected 2026</p>
+</div>
+
+<div class="education-box">
+<h2>+2 in Management</h2>
+<p>Shree Durga Secondary School</p>
+</div>
+
+<div class="education-box">
+<h2>SEE - 2020</h2>
+<p>Shree Durga Secondary School</p>
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h1 class="title">Contact</h1>
+
+<div class="contact-box">
+
+<div class="contact-item">
+<i class="fas fa-map-marker-alt"></i>
+Dhangadhi 03 Kailali
+</div>
+
+<div class="contact-item">
+<i class="fab fa-whatsapp"></i>
+9811654406
+</div>
+
+<div class="contact-item">
+<i class="fas fa-envelope"></i>
+hemantbhatta124@gmail.com
+</div>
+
+<div class="contact-item">
+<i class="fab fa-facebook"></i>
+facebook.com/heamu012
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Hemant Bhatta. All Rights Reserved.
+</footer>
+
+</body>
+</html>
